@@ -22,7 +22,8 @@ $.mobile.listview.prototype.getInput = function(){
 
 $.mobile.listview.prototype.setInput = function(a_input){
     
-    return $(searchElement).find('input').val(a_input);    
+    $(searchElement).find('input').val(a_input);
+    $(searchElement).find('input').trigger('change');
 };
 // TODO rename callback/deprecate and default to the item itself as the first argument
 var defaultFilterCallback = function( text, searchValue, item ) {
