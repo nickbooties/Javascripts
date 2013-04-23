@@ -1,7 +1,9 @@
-/* niklistview for jquerymoble 1.3
-
-    extends the jquery.mobile.listview widget to allow set/get of the search input field.
-
+/*
+ * niklistview for jquerymobile 1.3
+ *
+ * extends the jquery.mobile.listview widget to allow set/get of the search input field.
+ *
+ * Nick Booth - Apr 2013
 */
 
 (function( $, undefined ) {
@@ -12,7 +14,7 @@ $.mobile.listview.prototype.options.filterPlaceholder = "Filter items...";
 $.mobile.listview.prototype.options.filterTheme = "c";
 $.mobile.listview.prototype.options.filterReveal = false;
 
-$.mobile.listview.prototype.searchElement = "";
+$.mobile.listview.prototype.searchElement;
 $.mobile.listview.prototype.getInput = function(){
     
     return $(searchElement).find('input').val();    
